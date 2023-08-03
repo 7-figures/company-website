@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+    href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="styles.css">
+
+    <title> Ramy Howells bootstrap</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container ">
+            <a href="#" class="navbar-brand"> SevillaKaft Interior Bootcamp</a>
+            <!-- wrapping Navbar in a button when collapsed-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item">
+                        <a href="#learn" class="nav-link"> What you will learn</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#questions" class="nav-link"> Questions</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#instructors" class="nav-link"> Instructors</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--showcase, pt,pb stands for padding top nd botom, px or py is padding on the x or y axis p-5 means 5 padding on all sides-->
+    <section class="bg-dark text-light p-2 p-lg-0 pt-lg-3
+     text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-center">
+                <div>
+                    <h1>Become a<span class="text-warning"> profesional interior Decor</span></h1>
+                    <p class="lead">
+                        We focus on teachng you the best practices on how to move from
+                        a newbies
+                        to professional Interior decorator in less than 6 months to give
+                        you expected results.
+                    </p>
+                    <button class=" btn btn-info btn-lg mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Start the Enrollment</button>
+                </div>
+                 <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p class="lead text-dark">Please Fill out this form and we will get back to you</p>
+            <form >
+                <div class="mb-3">
+                    <label for="first-name" class="col-form-label text-dark">
+                        First Name:
+                    </label>
+                    <input type="text" class="form-control" id="first-name">
+                    <label for="last-name" class="col-form-label text-dark">
+                        Last Name:
+                    </label>
+                    <input type="text" class="form-control" id="last-name">
+                    <label for="email" class="col-form-label text-dark">
+                        Email:
+                    </label>
+                    <input type="text" class="form-control" id="email">
+                    <label for="phone" class="col-form-label text-dark">
+                        Phone:
+                    </label>
+                    <input type="text" class="form-control" id="phone">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                <img class="image" src="interior.jpg" alt="">
+            </div>
+        </div>
+    <!--Newsletter-->
+    <section class="bg text-light p-2">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-ms-0">Sign up for our Newsletter</h3>
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter Email">
+                    <button class="btn btn-lg btn-dark" type="button">Send</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--boxes wrapping the laptop icon on bootstrap with h1 makes it bigger-->
+    <section class="p-2">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3"> <i class="bi bi-laptop"></i></div>
+                            <div class="card-title">Virtual</div>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Quia illum veritatis, voluptate deleniti dolore esse.
+                            </p>
+
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3"> <i class="bi bi-person-square"></i></div>
+                            <div class="card-title">Hybrid</div>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Quia illum veritatis, voluptate deleniti dolore esse.
+                            </p>
+
+                            <a href="#" class="btn btn-dark">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3"> <i class="bi bi-people"></i></div>
+                            <div class="card-title">In person</div>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Quia illum veritatis, voluptate deleniti dolore esse.
+                            </p>
+
+                            <a href="#" class="btn btn-danger">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!--Learn Section-->
+    <section id="learn" class=" p-3">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="int2.PNG" class="img-fluid" alt="">
+                </div>
+                <div class="col">
+                    <h2>Learn the fundamentals</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                        Optio accusamus, blanditiis veritatis delectus voluptatem asperiores!
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui aspernatur
+                        eum eveniet vitae beatae! Eveniet, molestias tempora aspernatur ipsam minima
+                        iusto nemo, laudantium esse eligendi doloremque explicabo consequuntur
+                        recusandae architecto.</p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-double-right">Read More</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="learn" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+
+                <div class="col-md-5">
+                    <h2>Learn Space Management</h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit.
+                        Optio accusamus, blanditiis veritatis delectus voluptatem asperiores!
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui aspernatur
+                        eum eveniet vitae beatae! Eveniet, molestias tempora aspernatur ipsam minima
+                        iusto nemo, laudantium esse eligendi doloremque explicabo consequuntur
+                        recusandae architecto.</p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="bi bi-chevron-double-right">Read More</i>
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="int3.PNG" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Questions Accordion-->
+    <section class="p-5" id="questions">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        </div>
+        <div class="accordion accordion-flush" id="questions">
+            <!--item1-->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#questions-One">
+                        Where Exactly are you loccated
+                    </button>
+                </h2>
+                <div id="questions-One" class="accordion-collapse collapse" data-bs-parent="#questions">
+                    <div class="accordion-body">
+                        We are located in the heart of Port Harcourt Nigeria. our office is easy to locate from
+                        anywhere in the city of port Harcourt,Obo-Akpor,Ikwerre,Abua-Odual,Oyigbo,Eleme etc.
+                    </div>
+                </div>
+                <!--item2-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-Two">
+                            How much Does it cost to Attend?
+                        </button>
+                    </h2>
+                    <div id="question-Two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">It depends on how long you want to learn with us, 6 months
+                            cost 500,00 naira, one year cost 900,000 naira with valid
+                            certicates isued in the end of your taining.</div>
+                    </div>
+                </div>
+                <!--item3-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-Three">
+                            What Do I Need to Know?
+                        </button>
+                    </h2>
+                    <div id="question-Three" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">No prior skills is required as long as you are willing to
+                            learn.Seillakraft will teach you
+                            everything you need to know
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Quidem nisi fuga autem consectetur, perspiciatis aliquam delectus voluptatibus
+                            recusandae deserunt voluptatem reprehenderit ipsam facilis
+                            sequi nulla ab odio laborum eius dolores!</div>
+                    </div>
+                </div>
+                <!--item4-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-Four">
+                            What Do I Sign up?
+                        </button>
+                    </h2>
+                    <div id="question-Four" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">No prior skills is required as long as you are willing to
+                            learn.Seillakraft will teach you
+                            everything you need to know
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Quidem nisi fuga autem consectetur, perspiciatis aliquam delectus voluptatibus
+                            recusandae deserunt voluptatem reprehenderit ipsam facilis
+                            sequi nulla ab odio laborum eius dolores!</div>
+                    </div>
+                </div>
+                <!--item5-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#question-Five">
+                            Would You Help me Get a Job?
+                        </button>
+                    </h2>
+                    <div id="question-Five" class="accordion-collapse collapse" data-bs-parent="#questions">
+                        <div class="accordion-body">No prior skills is required as long as you are willing to
+                            learn.Seillakraft will teach you
+                            everything you need to know
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Quidem nisi fuga autem consectetur, perspiciatis aliquam delectus voluptatibus
+                            recusandae deserunt voluptatem reprehenderit ipsam facilis
+                            sequi nulla ab odio laborum eius dolores!</div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <!--Instructors-->
+    <section id="instructors" class="p-1 bg-primary d-md-flex">
+        <div class="container">
+            <h2 class="text-center text-light">Our Instructors</h2>
+            <p class="lead text-center text-white mb-4">
+                You will be learning intensively under teachers with
+                over 5years experience in interior
+                decoration and space management
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb3" alt="">
+                            <h3 class="card-title mb-3">CEO/MD, Sevilla Able</h3>
+                            <p class="card-text"> Mr Sevilla is the brain behind SevillaKaft interiors with
+                                over 15years of experiencein the industry. He has furnished many houses
+                                and hotels to numerous to mention</p>
+                            <a href="#"> <i class=" bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"> <i class=" bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"> <i class=" bi bi-linked text-dark mx-1"></i></a>
+                            <a href="#"> <i class=" bi bi-instagram text-dark mx-1"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/8.jpg" class="rounded-circle mb3" alt="">
+                            <h3 class="card-title mb-3">Manager, Ramdy Okpata</h3>
+                            <p class="card-text"> Engr. Ramdi act as the manager/operations team lead at
+                                SevillaKaft interiors with
+                                over 14years of experience in the industry. He has furnished many houses
+                                and hotels to numerous to mention</p>
+                            <a href="#"> <i class=" bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"> <i class=" bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"> <i class=" bi bi-linked text-dark mx-1"></i></a>
+                            <a href="#"> <i class=" bi bi-instagram text-dark mx-1"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/15.jpg" class="rounded-circle mb3"
+                                alt="">
+                            <h3 class="card-title mb-3">Bianca Oji</h3>
+                            <p class="card-text"> Miss Bianca is an associate at SevillaKaft interiors with
+                                over 10years of experiencein the industry. she has equally furnished many houses
+                                and hotels to numerous to mention</p>
+                            <a href="#"> <i class=" bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"> <i class=" bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"> <i class=" bi bi-linked text-dark mx-1"></i></a>
+                            <a href="#"> <i class=" bi bi-instagram text-dark mx-1"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/20.jpg" class="rounded-circle mb3" alt="">
+<h3 class="card-title mb-3">Secretary, Rhema Classic</h3>
+<p class="card-text"> Mr Sevilla is the brain behind SevillaKaft interiors with 
+over 15years of experiencein the industry. has furnished many houses
+and hotels to numerous to mention</p>
+<a href="#"> <i class=" bi bi-twitter text-dark mx-1"></i></a>
+<a href="#"> <i class=" bi bi-facebook text-dark mx-1"></i></a>
+<a href="#"> <i class=" bi bi-linked text-dark mx-1"></i></a>
+<a href="#"> <i class=" bi bi-instagram text-dark mx-1"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+       <!--Contact and Map-->
+       <section class="p-3">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md">
+                    <h2 class="tex-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> NTA road Port harcourt
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Phone:</span> +234-803-555-555
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email:</span> sevilakraft@gmail.co
+                        </li>
+                    </ul>
+                </div>
+                <div class= "col-md" id="map">
+                </div>
+            </div>
+        </div>
+       </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+        <script>
+            mapboxgl.accessToken =
+              'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw'
+            var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/mapbox/streets-v11',
+              center: [-71.060982, 42.35725],
+              zoom: 18,
+            })
+          </script>
+          <!--Footer-->
+          <footer class="p-5 bg-dark text-white text-center position-relative">
+            <div class="container">
+                <p class="lead">
+                    Copyright &copy; 2023 interior Design Bootcamp
+                </p>
+                <a href="#" class="position-absolute bottom-0 end-0 p-3">
+                    <i class="bi bi-arrow-up-cirlce h1"></i>
+                </a>
+            </div>
+          </footer>
+  
+ 
+        </body>
+
+</body>
+
+</html>
